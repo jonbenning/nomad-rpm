@@ -5,13 +5,14 @@ Tries to follow the [packaging guidelines](https://fedoraproject.org/wiki/Packag
 * Binary: `/usr/bin/nomad`
 * Config: `/etc/nomad/`
 
-Heavily borrowed from https://github.com/stevendborrelli/consul-template-rpm.
+Heavily borrowed from:
+https://github.com/stevendborrelli/consul-template-rpm
+https://github.com/boyvinall/nomad-rpm
+https://github.com/tomhillable/consul-rpm
 
 # Build
 
-If you have [vagrant](https://www.vagrantup.com/) installed, then just clone this repo and `vagrant up`.
-
-If not, build the RPM as a non-root user from your home directory:
+Build the RPM as a non-root user from your home directory:
 
 * Check out this repo. Seriously - check it out. Nice.
     ```
@@ -51,7 +52,7 @@ One RPM for the Nomad binary.
 # Run
 
 * Install the RPM.
-* Put config files in `/etc/nomad/`.
+* Put config files in `/etc/nomad.d/`.
 * Start the service and tail the logs `systemctl start nomad.service` and `journalctl -f`.
   * To enable at reboot `systemctl enable nomad.service`.
 
