@@ -3,7 +3,7 @@
 Tries to follow the [packaging guidelines](https://fedoraproject.org/wiki/Packaging:Guidelines) from Fedora.
 
 * Binary: `/usr/bin/nomad`
-* Config: `/etc/nomad/`
+* Config: `/etc/nomad.d/`
 
 Heavily borrowed from:
 https://github.com/stevendborrelli/consul-template-rpm
